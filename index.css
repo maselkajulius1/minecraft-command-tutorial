@@ -1,5 +1,5 @@
 .dark-mode-background {
-    background-color: rgb(24, 30, 36)
+    background-color: rgb(24, 30, 36);
 }
 
 h1 {
@@ -49,12 +49,15 @@ p {
 
 a {
     text-decoration: none;
+    margin-left: 10px;
+    user-select: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: rgb(3, 104, 199);
     text-transform: capitalize;
     background-size: 200% auto;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgb(253, 144, 55) 50%);
-    transition: background-position 0.2s ease-out;
+    transition: background-position 0.1s ease-out;
 }
 
 a:hover {
