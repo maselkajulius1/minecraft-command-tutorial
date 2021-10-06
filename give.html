@@ -25,8 +25,33 @@
             </div>
 
             <div class="box-2">
-                <h2></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt euismod neque, eu ultricies risus viverra sodales. Sed blandit purus justo, vel porta enim pulvinar sit amet.</p>
+                <h2>Basics of /Give</h2>
+                <p>A give command is written where the target is written first(@a, @p, ect.), then the item(and NBT data), and then the amount of items given. For example,
+                "/give @p minecraft:netherite_axe 1". The amount of items given is not needed(the default is 1). Also, unless you are giving a modded item, you dont need
+                to specify where the item is from so you could also write the command as "/give @p netherite_axe".</p>
+            </div>
+
+            <div class="box-3">
+                <h2>Basic NBT data</h2>
+                <p>The most important NBT data tags to know for /give are enchantments, unbreakable, and custom tags. NBT tags are written where after you put
+                in the item you want to give, you write the tags in curly brackets. Other tags that you should probably use mcstacker.net to use are hide tags, 
+                modifiers, can destroy, can place on, name, and lore.</p>
+            </div>
+
+            <div class="box-4">
+                <h2>Sharpness NBT tag</h2>
+                <p>To write a enchantment tag, you first put "Enchatments:", then put a set of square
+                brackets, and within the sqaure brackets put a set of curly bracket for each enchantment, with a coma in between each set of brackets. Inside
+                The brackets you put the enchantment id(sharpness, protection, ect.) and then the level.An example would be "/give @p diamond sword{Enchantments:
+                [{id:sharpness,lvl:2},{id:unbreaking,lvl:5}]} 1". This gives a diamond sword with sharpness 2 and unbreaking 5.</p>
+            </div>
+
+            <div class="box-5">
+                <h2>Unbreakable and Custom NBT tags</h2>
+                <p>The unbreakable tag is really is really simple. You just have to put "ubreakable:1b" in you data. For example, "/give @p diamond_sword
+                {unbreakable:1b} 1". Combining that with enchantments would look like "/give @p diamond_sword{Enchantments:[{id:sharpness,lvl:5}],unbreakable:1b}. 
+                Custom tags are similar but instead of writting "unbreakable:1b" you write whatever the name of your tag is(it can't be the name name of an existing tag).
+                An example of that is "/give @p carrot_on_a_stick{exploding:1b} 1".</p>
             </div>
         </div>
     </body>
